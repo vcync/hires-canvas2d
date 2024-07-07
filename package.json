@@ -1,17 +1,19 @@
 {
-  "name": "hires-canvas2d",
+  "name": "@vcync/hires-canvas2d",
   "version": "1.0.0",
   "description": "Gracefully handle Canvas2D drawing for HiDPI displays",
-  "main": "src/HiresCanvasRenderingContext2D.js",
-  "types": "types/HiresCanvasRenderingContext2D.d.ts",
+  "main": "src/HighResCanvasRenderingContext2D.js",
+  "types": "types/HighResCanvasRenderingContext2D.d.ts",
   "author": "Sam Wray",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vcync/hires-canvas2d.git"
+    "url": "git+https://github.com/vcync/hires-canvas2d.git"
   },
   "homepage": "https://github.com/vcync/hires-canvas2d",
-  "bugs": "https://github.com/vcync/hires-canvas2d/issues",
+  "bugs": {
+    "url": "https://github.com/vcync/hires-canvas2d/issues"
+  },
   "keywords": [
     "canvas",
     "canvas2d",
@@ -25,7 +27,7 @@
     "typescript": "^5.5.3"
   },
   "scripts": {
-    "prepack": "npx tsc",
+    "prepublishOnly": "npx tsc",
     "dev": "npx http-server ./ -o /example -c -1",
     "lint": "yarn prettier src example --write"
   },

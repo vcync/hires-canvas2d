@@ -3,7 +3,7 @@
 > A wrapper around CanvasRenderingContext2D to handle HiDPI scaling
 
 ```JavaScript
-import { HighResCanvasRenderingContext2D } from "hires-2d";
+import { HighResCanvasRenderingContext2D } from "hires-canvas2d";
 
 const canvas = document.querySelector("canvas");
 const context = new HighResCanvasRenderingContext2D(canvas.getContext("2d"), window.devicePixelRatio);
